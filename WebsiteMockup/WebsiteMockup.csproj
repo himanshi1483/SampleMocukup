@@ -14,7 +14,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WebsiteMockup</RootNamespace>
     <AssemblyName>WebsiteMockup</AssemblyName>
-    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -53,11 +54,7 @@
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Abstractions" />
     <Reference Include="System.Web.Routing" />
     <Reference Include="System.Xml" />
@@ -201,6 +198,7 @@
     <Content Include="Content\Varsity\assets\js\jquery.fancybox.pack.js" />
     <Content Include="Content\Varsity\assets\js\jquery.min.js" />
     <Content Include="Content\Varsity\assets\js\jquery.mixitup.js" />
+    <Content Include="Content\Varsity\assets\js\newsbox.js" />
     <Content Include="Content\Varsity\assets\js\slick.js" />
     <Content Include="Content\Varsity\assets\js\waypoints.js" />
     <Content Include="Content\Varsity\blog-archive.html" />
@@ -214,7 +212,15 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\1.jpg" />
+    <Content Include="Images\3.jpg" />
+    <Content Include="Images\6.jpg" />
+    <Content Include="Images\download.jpg" />
     <Content Include="Images\emblem-of-india-logo-vector.png" />
+    <Content Include="Images\favicon.ico" />
+    <Content Include="Images\favicon_image.png" />
+    <Content Include="Images\Logo.jpg" />
+    <Content Include="Images\swachhbharat.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\Varsity\assets\fonts\fontawesome-webfont.eot" />

@@ -7,7 +7,7 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/Content/Varsity/assets/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="~/Images/favicon.ico" type="image/x-icon">
 
     <!-- Font awesome -->
     <link href="/Content/Varsity/assets/css/font-awesome.css" rel="stylesheet">
@@ -155,7 +155,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                  
+
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul id="top-menu" class="nav navbar-nav main-nav">
@@ -219,7 +219,7 @@
                         </li>
                         <li><a href="contact.html">Contact</a></li>
                         @*<li><a href="404.html">404 Page</a></li>
-        <li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>*@
+                            <li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>*@
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
@@ -241,52 +241,29 @@
             <div class="container">
                 <div class="mu-footer-top-area">
                     <div class="row">
-                        <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class="col-lg-8 col-md-8 col-sm-8">
                             <div class="mu-footer-widget">
-                                <h4>Information</h4>
+                                <h4>Related Links</h4>
                                 <ul>
                                     <li><a href="#">About Us</a></li>
                                     <li><a href="">Features</a></li>
                                     <li><a href="">Course</a></li>
-                                    <li><a href="">Event</a></li>
-                                    <li><a href="">Sitemap</a></li>
-                                    <li><a href="">Term Of Use</a></li>
+                               
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class="col-lg-4 col-md-4 col-sm-4">
                             <div class="mu-footer-widget">
-                                <h4>Student Help</h4>
+                                <h4>More Help</h4>
                                 <ul>
                                     <li><a href="">Get Started</a></li>
                                     <li><a href="#">My Questions</a></li>
                                     <li><a href="">Download Files</a></li>
-                                    <li><a href="">Latest Course</a></li>
-                                    <li><a href="">Academic News</a></li>
+                                
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3">
-                            <div class="mu-footer-widget">
-                                <h4>News letter</h4>
-                                <p>Get latest update, news & academic offers</p>
-                                <form class="mu-subscribe-form">
-                                    <input type="email" placeholder="Type your Email">
-                                    <button class="mu-subscribe-btn" type="submit">Subscribe!</button>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3">
-                            <div class="mu-footer-widget">
-                                <h4>Contact</h4>
-                                <address>
-                                    <p>P.O. Box 320, Ross, California 9495, USA</p>
-                                    <p>Phone: (415) 453-1568 </p>
-                                    <p>Website: www.markups.io</p>
-                                    <p>Email: info@markups.io</p>
-                                </address>
-                            </div>
-                        </div>
+                      
                     </div>
                 </div>
             </div>
@@ -296,7 +273,12 @@
         <div class="mu-footer-bottom">
             <div class="container">
                 <div class="mu-footer-bottom-area">
-                    <p>&copy; All Right Reserved. Designed by <a href="http://www.markups.io/" rel="nofollow">MarkUps.io</a></p>
+                    <div class="col-md-4"></div>
+                    <div class="col-md-8" style="text-align:left;color:#ffffff;font-size:12px;">
+                        Website Content Managed by Department of Agriculture Cooperation & Farmers Welfare | Mo A&FW | GoI
+                        Designed, Developed and Hosted by National Informatics Centre( NIC )
+                        Last Updated: 01 Aug 2019
+                    </div>
                 </div>
             </div>
         </div>
@@ -316,6 +298,7 @@
     <script type="text/javascript" src="/Content/Varsity/assets/js/jquery.mixitup.js"></script>
     <!-- Add fancyBox -->
     <script type="text/javascript" src="/Content/Varsity/assets/js/jquery.fancybox.pack.js"></script>
+    <script src="~/Content/Varsity/assets/js/newsbox.js" type="text/javascript"></script>
 
 
     <!-- Custom js -->
@@ -366,6 +349,24 @@
 
                 }).focus(); // focus on the content container
             });
+
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+
+
+            $(".news-demo-down-auto").bootstrapNews({
+                newsPerPage: 3,
+                autoplay: true,
+                pauseOnHover: true,
+                navigation: false,
+                direction: 'down',
+                newsTickerInterval: 1500,
+                onToDo: function () {
+                }
+            });
+
 
         });
     </script>
